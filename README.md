@@ -7,11 +7,11 @@ Setup Instructions
 
 2. To use the sample code, copy the payzippy files & directories to a directory of your choice in Visual Studio and change the namespace of all the files according to your project.
 
-3. Open dot-net-sdk/example/Config.cs file and set up your config details such as Merchant ID, Secret Key, Callback URL. The examples won't work without setting up the config details. You can also set the UI mode to redirect or iframe (details in point 6).
+3. Open example/Config.cs file and set up your config details such as Merchant ID, Secret Key, Callback URL. The examples won't work without setting up the config details. You can also set the UI mode to redirect or iframe (details in point 6).
 
 4. Download Json.Net and Add reference of Newtonsoft.Json.dll for handling the json response.
 
-5. For the examples included, the callback url should point to the ChargingResp.aspx file under example folder. So, if you access your site locally as http://localhost:<port number>/, then callback url http://localhost:<port number>/dot-net-sdk/example/ChargingResp.aspx
+5. For the examples included, the callback url should point to the ChargingResp.aspx file under example folder. So, if you access your site locally as http://localhost:<port number>/, then callback url http://localhost:<port number>/example/ChargingResp.aspx
 
 6. There is an ChargingExample.aspx included for using the Charging API. This example includes the all parameters that can be sent in the Charging Request (Set this file as Start Page).
 
@@ -22,7 +22,7 @@ Setup Instructions
 Sample code snippet to create a charging request object is shown below:
 
 //include the charging payzippy_sdk( same as code example in ChargingExample.aspx.cs)
-using Payzippy_DOTNET_SDK.payzippy_sdk;
+using payzippy_sdk;
 
 
 //Set all the parameters that you want to send in the chargingrequest object.
